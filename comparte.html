@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Jovenes Codp</title>
 </head>
+
 <body>
-     <!--MENU DE OPCIONES-->
+
+    <!--MENU DE OPCIONES-->
     <header class="navbar">
         <div class="logo"><a class="enlace-principal" href="index.html">Jovenes Codp</a></div>
         <div class="menu-toggle" id="menu-toggle">
@@ -24,86 +25,28 @@
         </ul>
     </header>
 
+    <div class="container-form">
+        <h2 class="titulo">Oramos por ti</h2>
 
-    <main class="container">
-        <div class="row">
-             <div class="col s12 center-align">
-                  <h1 class="titulo">DEVOCIONALES</h1>
-             </div>
-        </div>
+        <p class="parrafo-nosotros">Si tienes una petición, no dudes en compartirla. Permite que nos unamos a ti en
+            oración, confiando en que juntos, podemos encontrar la paz y la respuesta que necesitamos. La Biblia
+            nos invita a llevar nuestras cargas unos a otros, como se menciona en Gálatas 6:2: “Llevad los unos las
+            cargas de los otros, y cumplid así la ley de Cristo”.</p>
 
-        <div class="row galeria">
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d1.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-                
-            </div>
 
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d2.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
+        <form action="https://formspree.io/f/xqkrrboe" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
             </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d3.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar " >
-                </div>
+            <div class="form-group">
+                <label for="asunto">Motivo de Oracion:</label>
+                <input type="text" id="asunto" name="asunto" required>
             </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d4.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d5.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d6.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d7.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d8.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d9.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d10.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d11.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-            <div class="col s12 m4 l3">
-                <div class="material-placeholder">
-                    <img src="img/d12.jpg" alt="" class="responsive-img materialboxed" data-caption="Descargar">
-                </div>
-            </div>
-
-        </div>
-   </main>
-   
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <script src="js/main.js"></script>
-
+            <input type="hidden" name="_replyto" value="jovenescodp@gmail.com">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     <!--FOOTER-->
     <button class="social">
         <span>Síguenos <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-heart-fill"
@@ -129,12 +72,10 @@
                 </a></svg>
         </div>
     </button>
-    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>
-
-
-
-    
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
+<script src="script.js"></script>
+
 </html>
